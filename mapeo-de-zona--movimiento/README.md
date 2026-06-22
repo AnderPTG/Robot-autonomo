@@ -19,7 +19,7 @@ Se determinó que la principal dificultad del proyecto no radica en el mapeo del
 
 Se decidió utilizar el **Arduino UNO Q , debido a que dispone de más memoria que el Arduino Uno tradicional y es compatible con Arduino App Lab, entorno de programación que ya se encuentra disponible para el desarrollo del proyecto.
 
-![MIcrocontrolador](imagenes/Arduino_UNO_Q_SBC_864789404.jpg)
+![MIcrocontrolador](imagenes/Arduino-UNO-Q-SBC-864789404.jpg)
 ---
 
 ## Entorno de programación
