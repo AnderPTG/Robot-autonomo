@@ -11,6 +11,7 @@ El objetivo del proyecto es diseñar y construir un robot autónomo capaz de des
 ## Filosofía de diseño
 
 Se determinó que la principal dificultad del proyecto no radica en el mapeo del entorno, sino en lograr un movimiento preciso, una localización adecuada y una capacidad confiable de evasión de obstáculos. Por esta razón, se descartó el uso de técnicas complejas como SLAM (Simultaneous Localization and Mapping) y se optó por una solución más simple, robusta y adecuada al nivel del proyecto.
+![Rutas](imagenes/Ruta.webp)
 
 ---
 
@@ -18,6 +19,7 @@ Se determinó que la principal dificultad del proyecto no radica en el mapeo del
 
 Se decidió utilizar el **Arduino UNO Q , debido a que dispone de más memoria que el Arduino Uno tradicional y es compatible con Arduino App Lab, entorno de programación que ya se encuentra disponible para el desarrollo del proyecto.
 
+![MIcrocontrolador](imagenes/Arduino_UNO_Q_SBC_864789404.jpg)
 ---
 
 ## Entorno de programación
@@ -30,6 +32,7 @@ El desarrollo del software se realizará utilizando **Arduino App Lab**. Para la
 
 El entorno se representará mediante una **matriz de ocupación de 20 × 20 celdas**. Cada celda corresponde a una pequeña porción del espacio físico de la maqueta. Esta representación permite almacenar obstáculos, definir posiciones y calcular rutas de manera sencilla, además de facilitar modificaciones rápidas el día de la prueba.
 
+![Ejemplo de celdas](imagenes/D_NQ_NP_687932-MLU49862798413_052022-O-786281650.webp)
 Para las primeras pruebas se utilizó un mapa compuesto por:
 
 - Obstáculos en todos los bordes de la matriz.
@@ -116,6 +119,7 @@ Se concluyó que el uso de **encoders** es prácticamente indispensable para log
 
 - **Sin encoder:** el robot solo podría desplazarse en función del tiempo, lo que genera errores debido a variaciones en la batería, la fricción del piso y las diferencias entre motores.
 - **Con encoder:** el robot podrá conocer exactamente cuánto ha avanzado, permitiendo traducir cada movimiento de la matriz en desplazamientos físicos repetibles y precisos.
+![Motor con encoder](imagenes/16x9-845gm-single-turn-nema-type-4-13-single-turn-absolute-encoder.2400-3948841172.jpg)
 
 ---
 
